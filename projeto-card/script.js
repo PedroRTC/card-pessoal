@@ -28,7 +28,7 @@ function expandirInfor(){
         i_expandir.classList.add("fa-expand")
         i_expandir.classList.remove("fa-compress")
         button_expandir.addEventListener("click",expandir)
-        button_expandir.removeventListener("click",comprimir)
+        button_expandir.removeEventListener("click",comprimir)
     }
 }
 
