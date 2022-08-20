@@ -16,14 +16,19 @@ body{
 
 main{
     text-align: center;
-    width: 215px;
+    width: 220px;
     height: 175px;
     border-radius: 15px;
-    box-shadow: 0px 20px 30px rgb(29, 29, 29);
-    transition:  all 0.5s;
-
-    
+    box-shadow: 0px 20px 30px rgb(32, 32, 32);
+    transition:  all 0.5s; 
 }
+
+main:hover{
+  
+    transform:translateY(-15px);
+}
+
+
 
 
 .div_card{
@@ -32,7 +37,6 @@ main{
     transform: translateY(-70px);
     width: 80%;
     height:100%;
-    color: #CCC6BC;
     overflow: hidden;
     padding-top: 35px;
    
@@ -71,14 +75,15 @@ img{
 h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 14pt;
+    letter-spacing: 1px;
     margin-top: 10px;
+    color: white;
     
 }
 
 p{
     font-family: 'Quicksand', sans-serif;
-    font-size: 8pt;
-    /*-webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.634)) ;*/
+    font-size: 9pt;
     padding-bottom: 0px;
     color: gold;
    
@@ -92,8 +97,8 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    gap: 20px;
+    margin-top: 20px;
+    gap: 45px;
 }
 
 section a{
@@ -103,8 +108,57 @@ section a{
 
 section i{
     transform: scale(1.5);
+    transition: all 0.5s;
 }
 
+section i:hover{
+    color: gold;
+    transform: scale(1.7)
+}
+
+
+.div_buttons{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.div_buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+
+}
+
+.message{
+    background-image: linear-gradient(45deg,orangered,orangered,gold,orangered,orangered);
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 1s;
+   
+    
+}
+
+
+.message:hover{
+    background-position: 130px;
+   
+}
+
+.cv{
+    border: 1px solid gold;
+    color:gold ;
+   
+}
 
 
 .button_expandir{
@@ -116,6 +170,10 @@ section i{
     width: 30px;
     height: 30px;
     margin: auto;
+    cursor: pointer;
+    
+
+   
    
    
    
@@ -124,10 +182,18 @@ section i{
 
 
 .button_expandir i{
-    color:orangered ;
-    transform:rotateZ(-45deg)  ;
+    color:white ;
+    transform:rotateZ(-45deg) scale(0.8)  ;
+    transition: all 0.3s;
     
   
+}
+
+.button_expandir i:hover{
+
+    transform:rotateZ(-45deg) scale(1);
+    color:orangered;
+
 }
 
 
@@ -141,4 +207,5 @@ section i{
 }
  .expandir_img{
     transform: scale(1.2) translateY(-15px);
+   
  }
