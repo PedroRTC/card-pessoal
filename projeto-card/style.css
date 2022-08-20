@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  background-color: #333;
+}
+
+main{
+    text-align: center;
+    width: 215px;
+    height: 175px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px rgb(29, 29, 29);
+    transition:  all 0.5s;
+
+    
+}
+
+
+.div_card{
+    margin: auto;
+    text-align: center;
+    transform: translateY(-70px);
+    width: 80%;
+    height:100%;
+    color: #CCC6BC;
+    overflow: hidden;
+    padding-top: 35px;
+   
+
+}
+
+.div_img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 131px;
+    border-radius:10px ;
+    background-image: linear-gradient(60deg,gold,orangered,gold,orangered);
+    z-index: -1;
+    transition:  all 0.5s;
+    animation: infinite linear 2s animate;
+   
+}
+
+@keyframes animate{
+    0%{
+        background-position: 320px;
+    }
+}
+
+
+img{
+    width: 100px;
+    border-radius:10px ;
+    
+    
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14pt;
+    margin-top: 10px;
+    
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 8pt;
+    /*-webkit-box-reflect: below 1px linear-gradient(transparent,rgba(0, 0, 0, 0.634)) ;*/
+    padding-bottom: 0px;
+    color: gold;
+   
+}
+
+
+
+section{
+   
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+section a{
+    text-decoration: none;
+    color:white;
+}
+
+section i{
+    transform: scale(1.5);
+}
+
+
+
+.button_expandir{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transform: translateY(-50px) rotateZ(45deg);
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+   
+   
+   
+    
+}
+
+
+.button_expandir i{
+    color:orangered ;
+    transform:rotateZ(-45deg)  ;
+    
+  
+}
+
+
+/* ...............................................class criadas com javascript.........................................................*/
+
+
+
+.expandir_main{
+    height: 300px;
+    width: 250px;
+}
+ .expandir_img{
+    transform: scale(1.2) translateY(-15px);
+ }
